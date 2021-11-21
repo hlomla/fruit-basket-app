@@ -1,4 +1,4 @@
-  language: node_js
+language: node_js
 
 env:
   - DATABASE_URL=postgresql://postgres@localhost:5432/fruit_app'
