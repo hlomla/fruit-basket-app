@@ -1,10 +1,10 @@
 language: node_js
 
+node_js:  
+  - "12"
+
 env:
   - DATABASE_URL=postgresql://postgres@localhost:5432/fruit_app'
-
-node_js:  
-  - "12.22.7"
 
 before_script:
   - psql -c 'create database fruit_app' -U postgres
