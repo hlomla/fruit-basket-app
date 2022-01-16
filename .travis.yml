@@ -1,4 +1,9 @@
-language: node_js
+language: node.js
+# language: ruby
+# install:
+#   - gem uninstall bundler
+#   - gem install bundler --version '1.7.4'
+# script: "rake"
 
 node_js:  
   - "12.22.7"
