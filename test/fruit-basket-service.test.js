@@ -2,9 +2,8 @@ const assert = require("assert");
 const FruitBasket = require("../fruit-basket-service");
 const pg = require("pg");
 const Pool = pg.Pool;
-require('dotenv').config()
 
-const connectionString = process.env.DATABASE_URL  || 'postgres://localhost:5432/fruit_app'
+const connectionString = process.env.DATABASE_URL  || 'postgresql://codex:pg123@localhost:5432/fruit_app'
 
 const pool = new Pool({
     connectionString
