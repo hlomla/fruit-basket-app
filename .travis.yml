@@ -2,7 +2,6 @@ language: node_js
 
 node_js:  
   - "12.22.7"
-  - node
 
 env:
   - 'DATABASE_URL=postgresql://postgres@localhost:5432/fruit_app'
@@ -12,8 +11,3 @@ before_script:
   - psql -U postgres -d fruit_app -a -f create-tables.sql
 services:
   - postgresql
-  addons:
-  postgresql: '9.4'
-  apt:
-    packages:
-      - postgresql-server-dev-9.4
